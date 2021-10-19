@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  visibility:hidden;
 }
 
 .App-logo {
@@ -35,4 +36,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+.circle{
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: yellow;
+  margin: 50px;
+}
+.circle.red{
+  background-color:red
+}
+.circle.blue{
+  background-color:blue
+}
+
+
+  .container {
+  width:1440px;
+  height:100vh;
+  margin: 0 auto;
+  display:flex ;
+  align-items:center;
+  visibility: hidden;
+}
+
+.img_container{
+  width:960px;
+  height:460px;
+  position: relative;
+  overflow: hidden;
+  
+}
+.img_container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: white;
+}
+
+.img_container img{
+  width:960px;
+  height:460px;
+
 }
