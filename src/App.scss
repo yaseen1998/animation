@@ -9,6 +9,7 @@ html{
 }
 .hero{
     height: 100vh;
+    visibility: hidden;
     .hero_container{
         width: 1440px;
         min-width: 1440px;
@@ -83,7 +84,37 @@ html{
             }
             }
             }
-            
+            .hero_image{
+                width: 50%;
+                height: 100vh;
+                position: relative;
+                .hero_image_inner{
+                    .hero_image{
+                    position: absolute;
+                    overflow: hidden;
+                    &.girl{
+                        top: 0;
+                        right:0;
+                        width:45%;
+                        height: 50%;
+                    }
+                    &.boy{
+                        bottom: 24px;
+                        left:0px;
+                        width:52%;
+                        height: 65%;
+                    }
+                    img{
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: 100%;
+                    }
+                }
+                }
+            }
         }
     }
 }

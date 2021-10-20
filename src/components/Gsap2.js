@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../App.css';
 import {React,useRef,useEffect,useState} from 'react';
 import { TweenMax,Power3,gsap } from 'gsap';
 
 
-function App() {
+function Gsap2() {
   let logoitem= useRef(null)
   let textitem=useRef(null)
   useEffect(()=>{
@@ -34,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default Gsap2;
