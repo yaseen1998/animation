@@ -2,8 +2,8 @@ import {React,useRef,useEffect,useState, Component} from 'react';
 import { gsap } from 'gsap';
 
 
-export class Gsap1 extends Component {
-    render() {
+const Gsap1 = ()=>{
+    
         const [backgroud,setBackground] = useState("#5a7d95")
         console.log(setBackground);
         const hederRef = useRef(null)
@@ -34,7 +34,7 @@ export class Gsap1 extends Component {
                 
             </div>
         )
-    }
+    
 }
 
 export default Gsap1

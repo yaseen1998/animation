@@ -1,8 +1,8 @@
 import React, { Component} from 'react'
-import "./App.css"
+import "../App.css"
 import CSSRulePlugin from 'gsap/CSSRulePlugin'
 import { TimelineLite,Power2 } from 'gsap'
-export class App extends Component {
+export class Gsap4 extends Component {
   constructor(props){
     super(props)
     this.container = React.createRef()
@@ -34,4 +34,4 @@ export class App extends Component {
   }
 }
 
-export default App
+export default Gsap4

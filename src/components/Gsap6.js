@@ -41,7 +41,7 @@ const Gsap6 = () => {
     : fadeIn(".fadeIn");
 
   return (
-    <>
+    <body className="Gsap6">
       <div className='header'>
         <div className='sm-btn'>
           <img src={back} alt='back arrow' />
@@ -92,7 +92,7 @@ const Gsap6 = () => {
           </div>
         </div>
       </div>
-    </>
+    </body>
   );
 };
 

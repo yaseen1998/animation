@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./App.scss";
+import "../App.scss";
 import { TweenMax, Power3, TimelineLite } from "gsap";
-import arrow from "./images/arrow-right.svg";
+import arrow from "../images/arrow-right.svg";
 
-export class App extends Component {
+export class Gsap5 extends Component {
  
   constructor(props) {
     super(props);
@@ -103,4 +103,4 @@ export class App extends Component {
   }
 }
 
-export default App;
+export default Gsap5;
