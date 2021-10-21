@@ -2,6 +2,7 @@ import React, { useRef,useEffect } from "react";
 import { FaSearch,FaShoppingCart } from "react-icons/fa";
 import { FiArrowLeft,FiArrowRight } from "react-icons/fi";
 import { TweenMax, Power3, TimelineLite } from "gsap";
+import {Link} from "react-router-dom";
 
 import "./Gsap9.scss"
 
@@ -106,6 +107,7 @@ const Gsap9=()=>{
     )
     return(
         <body >
+           
             <div className="wrapper9">
                 <div className="nav9">
                     <div className="logo9">clean juice</div>
@@ -151,7 +153,8 @@ const Gsap9=()=>{
                 </ul>
                 </div>
                 <div className="arrow9">
-                    <button className="prev9"><FiArrowLeft/></button>
+                <Link to="Gsap8"><button className="prev9"><FiArrowLeft/></button> </Link>
+                    
                 <button className="next9"><FiArrowRight/></button>
                 </div>
             </div>

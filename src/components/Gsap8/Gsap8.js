@@ -1,5 +1,6 @@
 import React, { useRef,useEffect } from "react";
 import { TweenMax, Power3, TimelineLite } from "gsap";
+import {Link} from "react-router-dom";
 import "./Gsap8.scss"
 import { FaPlay,FaFacebookF,FaTwitter ,FaInstagram} from "react-icons/fa";
 
@@ -97,7 +98,8 @@ return(
                 </div>
                 <div className="menu-links">
                     <ul>
-                        <li>home</li>
+                    <Link to="/" className="link8"><li>home</li></Link>
+                        
                         <li>snow life</li>
                         <li>contact</li>
                     </ul>
@@ -115,8 +117,10 @@ return(
                      Nam saepe veniam, in quod a dolorum. Explicabo </p>
             </div>
             <div className="watchnow">
+            <Link to="Gsap7"> 
                 <FaPlay className="faplay"/>
                 <a href="#">watch now</a>
+                </Link>
             </div>
             <div className="media8">
                 <ul>
