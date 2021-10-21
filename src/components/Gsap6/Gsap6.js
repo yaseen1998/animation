@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useIntersection } from "react-use";
-import back from "./left.svg";
-import send from "./send.svg";
+import back from "../left.svg";
+import send from "../send.svg";
 import gsap from "gsap";
 import "./Gsap6.scss";
 

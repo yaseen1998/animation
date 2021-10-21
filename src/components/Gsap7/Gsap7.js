@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { FaSearch } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
+import {Link} from "react-router-dom";
+
 import "./Gsap7.scss"
 
 const Gsap7 = ()=>{
@@ -21,7 +23,9 @@ const Gsap7 = ()=>{
 
             <div className="media">
                 <ul>
-                    <li>facebook</li>
+                <Link to="Gasp6" className="link8"><li>facebook</li></Link>
+
+                    
                     <li>instegram</li>
                     <li>twitter</li>
                 </ul>
