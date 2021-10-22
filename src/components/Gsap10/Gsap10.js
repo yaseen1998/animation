@@ -182,8 +182,8 @@ TweenMax.from(".product_sub10",3,{
                 </div>
 
                     <ul>
-                        <li><FiArrowLeft/></li>
-                        <li><FiArrowRight/></li>
+                    <Link to="/"> <li><FiArrowLeft/></li></Link>
+                        <Link to="Gsap11"> <li><FiArrowRight/></li></Link>
                     </ul>
             </div>
             </div>
