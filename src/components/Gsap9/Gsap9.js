@@ -155,7 +155,7 @@ const Gsap9=()=>{
                 <div className="arrow9">
                 <Link to="Gsap8"><button className="prev9"><FiArrowLeft/></button> </Link>
                     
-                <button className="next9"><FiArrowRight/></button>
+                <Link to="Gsap10"><button className="next9"><FiArrowRight/></button></Link>
                 </div>
             </div>
             {/* {
