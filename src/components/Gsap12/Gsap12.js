@@ -7,27 +7,41 @@ import { AiOutlineMenu } from "react-icons/ai";
 import "swiper/swiper.scss"
 import "swiper/swiper-bundle.css"
 import "./Gsap12.scss";
-import {Swiper, Navigation,Pagination } from "swiper";
+
+import {Swiper, Navigation,Pagination,Autoplay,Scrollbar} from "swiper";
 
 const Gsap12 = () => {
     useEffect(()=>{
-        Swiper.use([Navigation,Pagination])
+        Swiper.use([Navigation,Pagination,Autoplay,Scrollbar])
+
         var slider = new Swiper(".swiper-container", {
+            autoplay:{
+                "delay": 2500,
+                "disableOnInteraction": false
+              },
             slidesPerView:"auto",
             spaceBetween: 150,
             centeredSlides: true,
             mousewheel: true,
+            speed: 100,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
               },
               pagination: {
                 el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+
+                return '<span class=\"' + className + '\">' + (index + 1) + '</span>';
+      
+              }
+
               },
               scrollbar: {
                 el: '.swiper-scrollbar',
-              },
-          })
+              },})
+          
           slider.on('slideChange', function () {
             TweenMax.to('.slide-text span', .2, {
               y: '-100px',
@@ -36,7 +50,8 @@ const Gsap12 = () => {
               x: '-100px',
             })
             TweenMax.to('.swiper-slide-active', .5, {
-              scale: .85
+              scale: .85,
+              
             })
           })
           slider.on('slideChangeTransitionEnd', function () {
