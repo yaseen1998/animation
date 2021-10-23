@@ -3,11 +3,8 @@ import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { TweenMax, Power3, TimelineLite, Expo } from "gsap";
 import { Link } from "react-router-dom";
-
 import { AiOutlineMenu } from "react-icons/ai";
-
 import "./Gsap11.scss";
-import { width } from "dom-helpers";
 const Gsap11 = () => {
     useEffect(()=>{
         TweenMax.from(".left-container11", 2, {
@@ -87,7 +84,7 @@ const Gsap11 = () => {
               <h1>Our Story</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                    Labore quidem excepturi non officiis error suscipit ipsa nemo maiores. Delectus, veniam?</p>
-              <p>Read More</p>
+                   <Link to="Gsap12"> <p>Read More</p></Link>
           </div>
           <div className="social_container11">
               <li className="social11">
