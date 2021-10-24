@@ -1,7 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { FaSearch, FaShoppingCart } from "react-icons/fa";
-import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import { TweenMax, Power4, TimelineLite, Expo } from "gsap";
+import { TweenMax, Power4 } from "gsap";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import "swiper/swiper.scss"
@@ -210,8 +208,11 @@ const Gsap12 = () => {
           <p>full project</p>
         </div>
         <div className="scroll12">
+        <Link to="Gsap13">
           <p>scroll</p>
+          </Link>
         </div>
+        
       </div>
     </footer>
 

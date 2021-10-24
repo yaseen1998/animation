@@ -1,0 +1,188 @@
+
+.navbar13{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    color: #232123;
+    z-index: 1;
+}
+.middle13{
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    
+}
+.left13 , .right13{
+    ul{
+        li{
+            display: inline;
+            margin: 20px;
+            cursor: pointer;
+            z-index: 999;
+        }
+    }
+}
+.container13{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.title13{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: -1;
+    font-size: 80px;
+    letter-spacing: 1px;
+    transform: scaleY(1.7);
+    .black13{
+        color: #232123;
+    }
+    .outlined13{
+        color: transparent;
+        -webkit-text-stroke: 2px #232123;
+        opacity: 0.8;
+    }
+}
+.forest13{
+    position: absolute;
+    top: 50vh;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    img{
+        width: 100%;
+    }
+}
+.bg-image13{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -2;
+    position: fixed;
+    background: url('https://github.com/vaibhav2110/Destination-Unknown-GSAP-/blob/master/img/bg.jpg?raw=true') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+.desc13{
+    position: fixed;
+    bottom: 0;
+    height: 250px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .sub_title13{
+        color: white;
+        padding-bottom: 25px;
+        width: 65%;
+        overflow: hidden;
+        align-self: flex-end;
+    };
+    .bottom_nav13{
+        width: 100%;
+        height: 80px;
+        background-color: #CAC5C1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        h4{
+            transform: scaleY(1.7) translateX((-20px));
+            color: #232123;
+            transform: 0.7s all;
+            transition: 0.7s all ease
+        }
+        
+        
+
+    }
+}
+.circle13{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 20px;
+    cursor: pointer;
+    border:1px solid;
+    &::before{
+        content:'';
+        display: block;
+        height: 1.5px;
+        width: 15px;
+        background-color: #232123;
+        margin-top: 46%;
+        margin-left: -56%;
+    };
+    &::after{
+        content: '';
+        display: block;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        opacity: 0.2;
+        background-color: #232123;
+        margin-left: -240px;
+        margin-top: -130%;
+        transition: 0.7s all ease;
+    }
+    
+}
+.bottom_nav13:hover .circle13::after{
+            transition: 0.7s all ease;
+            margin-left: -15px;
+}
+.bottom_nav13:hover  h4{
+    transform: scaleY(1.7) translateX((0));
+    transition: 0.7s all ease
+}
+.grid13{
+    display: grid;
+    grid-template-columns:repeat(12,1fr);
+    grid-template-rows:repeat(12,1fr);
+    grid-column: 1/span 12;
+    grid-row: 1/span 12;
+    width: 100%;
+    height: 100%;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    position: absolute;
+    top: 0;
+}
+.imgs13{
+    grid-column: 3/span 4;
+    grid-row: 3/span 8;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    bottom: 100%;
+    transform-origin: top;
+    // transform: rotateX(180deg);
+}
+
+.first-img13{
+    height: 600px;
+    background: url('https://github.com/vaibhav2110/Destination-Unknown-GSAP-/blob/master/img/first.png?raw=true') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.img-wrapper{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: rotateX(180deg);
+    cursor: pointer;
+    transition: .7s all;
+    background-color: red;
+    z-index: 110000;
+}
+.img-wrapper:hover{
+    transform:rotateX(180deg) scale(1.1);
+}
