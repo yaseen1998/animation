@@ -31,11 +31,11 @@ const Gsap12 = () => {
               pagination: {
                 el: '.swiper-pagination',
             clickable: true,
-            renderBullet: function (index, className) {
+            // renderBullet: function (index, classNameName) {
 
-                return '<span class=\"' + className + '\">' + (index + 1) + '</span>';
+            //     return '<span className=\"' + classNameName + '\">' + (index + 1) + '</span>';
       
-              }
+            //   }
 
               },
               scrollbar: {
@@ -140,76 +140,76 @@ const Gsap12 = () => {
             <div className="bg_text12">
                 <h1>TOkyoyokyo</h1>
             </div>
-            <div class="swiper-container">
-      <div class="swiper-wrapper">
+            <div className="swiper-container">
+      <div className="swiper-wrapper">
 
-        <div class="swiper-slide">
-          <div class="slide-number">
+        <div className="swiper-slide">
+          <div className="slide-number">
             <p><span>001</span></p>
           </div>
-          <div class="slide-text">
+          <div className="slide-text">
             <h4><span>tokyotr3</span></h4>
           </div>
-          <div class="slide-img"></div>
+          <div className="slide-img"></div>
         </div>
 
-        <div class="swiper-slide">
-          <div class="slide-number">
+        <div className="swiper-slide">
+          <div className="slide-number">
             <p><span>002</span></p>
           </div>
-          <div class="slide-text">
+          <div className="slide-text">
             <h4><span>tokyogu4</span></h4>
           </div>
-          <div class="slide-img"></div>
+          <div className="slide-img"></div>
         </div>
 
-        <div class="swiper-slide">
-          <div class="slide-number">
+        <div className="swiper-slide">
+          <div className="slide-number">
             <p><span>003</span></p>
           </div>
-          <div class="slide-text">
+          <div className="slide-text">
             <h4><span>tokyotv2</span></h4>
           </div>
-          <div class="slide-img"></div>
+          <div className="slide-img"></div>
         </div>
 
-        <div class="swiper-slide">
-          <div class="slide-number">
+        <div className="swiper-slide">
+          <div className="slide-number">
             <p><span>004</span></p>
           </div>
-          <div class="slide-text">
+          <div className="slide-text">
             <h4><span>tokyort7</span></h4>
           </div>
-          <div class="slide-img"></div>
+          <div className="slide-img"></div>
         </div>
 
-        <div class="swiper-slide">
-          <div class="slide-number">
+        <div className="swiper-slide">
+          <div className="slide-number">
             <p><span>005</span></p>
           </div>
-          <div class="slide-text">
+          <div className="slide-text">
             <h4><span>tokyogr8</span></h4>
           </div>
-          <div class="slide-img"></div>
+          <div className="slide-img"></div>
         </div>
 
 
       </div>
-      <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-scrollbar"></div>
+      <div className="swiper-pagination"></div>
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
+        <div className="swiper-scrollbar"></div>
 
     </div>
-    <footer class="footer12">
-      <div class="footer-wrapper12">
-        <div class="share12">
+    <footer className="footer12">
+      <div className="footer-wrapper12">
+        <div className="share12">
           <p>share</p>
         </div>
-        <div class="more12">
+        <div className="more12">
           <p>full project</p>
         </div>
-        <div class="scroll12">
+        <div className="scroll12">
           <p>scroll</p>
         </div>
       </div>

@@ -2,11 +2,28 @@ import React, { useRef,useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
 import {Link} from "react-router-dom";
+import hoverEffect from 'hover-effect'
+import { TweenMax, Power4, TimelineLite, Expo } from "gsap";
+
 
 import "./Gsap7.scss"
 
 const Gsap7 = ()=>{
-     
+    const sectionRef = useRef(null);
+
+    useEffect(()=>{
+        var myAnimation = new hoverEffect({
+            parent: document.querySelector('.distortion'),
+            intensity: 0.2,
+            angle:Math.PI/2,
+            easing:Expo.easeInOut,
+            // imagesRatio:1778 / 1000,
+            image1:'https://static.tildacdn.com/tild6431-6435-4532-b532-343266313561/alice-and-dragon-398.png',
+            image2: 'https://images.unsplash.com/photo-1543946207-39bd91e70ca7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVsbCUyMGhkJTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',
+            displacementImage: 'https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2018/04/1.jpg'
+            // https://cdn.rawgit.com/robin-dela/hover-effect/b6c6fd26/images/stripe1mul.png?raw=true
+        });
+    })
     return (
         <body className="Gsap7">
             
@@ -43,7 +60,7 @@ const Gsap7 = ()=>{
             <p>official sponsore</p>
             </div>
 
-            <div className="distortion"></div>
+            <div className="distortion" ref={sectionRef}></div>
 
         </div>
        
