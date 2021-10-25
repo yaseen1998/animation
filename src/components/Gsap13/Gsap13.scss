@@ -1,4 +1,12 @@
-
+// *{
+//     margin: 0;
+//     padding: 0;
+// }
+.Gsap13{
+    height: 100vh;
+    width: 100%;
+    // overflow: hidden;
+}
 .navbar13{
     position: fixed;
     width: 100%;
@@ -51,26 +59,8 @@
         opacity: 0.8;
     }
 }
-.forest13{
-    position: absolute;
-    top: 50vh;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    img{
-        width: 100%;
-    }
-}
-.bg-image13{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: -2;
-    position: fixed;
-    background: url('https://github.com/vaibhav2110/Destination-Unknown-GSAP-/blob/master/img/bg.jpg?raw=true') no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-}
+
+
 .desc13{
     position: fixed;
     bottom: 0;
@@ -135,12 +125,12 @@
     
 }
 .bottom_nav13:hover .circle13::after{
-            transition: 0.7s all ease;
-            margin-left: -15px;
+    transition: .7s all;
+    transition-timing-function: ease;
+    margin-left: -15px;
 }
-.bottom_nav13:hover  h4{
-    transform: scaleY(1.7) translateX((0));
-    transition: 0.7s all ease
+.bottom_nav13:hover h4{
+    transform: scaleY(1.7) translateX(0px);
 }
 .grid13{
     display: grid;
@@ -159,9 +149,10 @@
     grid-column: 3/span 4;
     grid-row: 3/span 8;
     width: 100%;
-    height: 0%;
+    height: 100%;
     overflow: hidden;
-    bottom: 100%;
+    position: relative;
+    top: 100%;
     transform-origin: top;
     // transform: rotateX(180deg);
 }
@@ -170,19 +161,84 @@
     height: 600px;
     background: url('https://github.com/vaibhav2110/Destination-Unknown-GSAP-/blob/master/img/first.png?raw=true') no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
 }
-
-.img-wrapper{
+.imgs-213{
+    grid-column: 7/span 2;
+    grid-row: 3/span 5;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 100%;
+    transform-origin: top;
+}
+.second-img13{
+    height: 600px;
+    background: url('https://github.com/vaibhav2110/Destination-Unknown-GSAP-/blob/master/img/second.png?raw=true') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.imgs-313{
+    grid-column: 7/span 2;
+    grid-row: 8/span 3;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 100%;
+    transform-origin: top;
+}
+.third-img13{
+    height: 300px;
+    background: url('https://github.com/vaibhav2110/Destination-Unknown-GSAP-/blob/master/img/third.png?raw=true') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.imgs-413{
+    grid-column: 9/span 2;
+    grid-row: 3/span 8;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 100%;
+    transform-origin: top;
+}
+.forth-img13{
+    height: 600px;
+    background: url('https://github.com/vaibhav2110/Destination-Unknown-GSAP-/blob/master/img/forth.png?raw=true') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img-wrapper13{
     position: absolute;
     top: 0;
     width: 100%;
-    transform: rotateX(180deg);
+    // transform: rotateX(180deg);
     cursor: pointer;
     transition: .7s all;
-    background-color: red;
-    z-index: 110000;
 }
-.img-wrapper:hover{
-    transform:rotateX(180deg) scale(1.1);
+.img-wrapper13:hover{
+    transform: scale(1.1);
+}
+
+.forest13{
+    position: absolute;
+    top: 50vh;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    img{
+        width: 100%;
+    }
+}
+.bg-image13{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -2;
+    position: fixed;
+    background: url('https://github.com/vaibhav2110/Destination-Unknown-GSAP-/blob/master/img/bg.jpg?raw=true') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
 }

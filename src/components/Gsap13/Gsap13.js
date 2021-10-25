@@ -8,7 +8,7 @@ import "./Gsap13.scss"
 
 const Gsap13 = () => {
     return (
-        <section>
+        <section className="Gsap13">
             <nav className='navbar13'>
                 <div className="left13">
                     <ul>
@@ -51,7 +51,7 @@ const Gsap13 = () => {
                         </div>
                     </div>
                     <div className="imgs-313">
-                        <div className="img-wrappe13r third-img13">
+                        <div className="img-wrapper13 third-img13">
                         </div>
                     </div>
                     <div className="imgs-413">
