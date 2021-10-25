@@ -5,7 +5,7 @@
 .Gsap13{
     height: 100vh;
     width: 100%;
-    // overflow: hidden;
+    overflow: hidden;
 }
 .navbar13{
     position: fixed;
@@ -133,7 +133,7 @@
     transform: scaleY(1.7) translateX(0px);
 }
 .grid13{
-    display: grid;
+    display: none;
     grid-template-columns:repeat(12,1fr);
     grid-template-rows:repeat(12,1fr);
     grid-column: 1/span 12;
@@ -149,10 +149,9 @@
     grid-column: 3/span 4;
     grid-row: 3/span 8;
     width: 100%;
-    height: 100%;
+    height: 0%;
     overflow: hidden;
     position: relative;
-    top: 100%;
     transform-origin: top;
     // transform: rotateX(180deg);
 }
@@ -166,10 +165,9 @@
 .imgs-213{
     grid-column: 7/span 2;
     grid-row: 3/span 5;
-    height: 100%;
+    height: 0%;
     overflow: hidden;
     position: relative;
-    top: 100%;
     transform-origin: top;
 }
 .second-img13{
@@ -181,11 +179,10 @@
 .imgs-313{
     grid-column: 7/span 2;
     grid-row: 8/span 3;
-    height: 100%;
+    height: 0%;
     width: 100%;
     overflow: hidden;
     position: relative;
-    top: 100%;
     transform-origin: top;
 }
 .third-img13{
@@ -197,11 +194,10 @@
 .imgs-413{
     grid-column: 9/span 2;
     grid-row: 3/span 8;
-    height: 100%;
+    height: 0%;
     width: 100%;
     overflow: hidden;
     position: relative;
-    top: 100%;
     transform-origin: top;
 }
 .forth-img13{
@@ -241,4 +237,20 @@
     background: url('https://github.com/vaibhav2110/Destination-Unknown-GSAP-/blob/master/img/bg.jpg?raw=true') no-repeat;
     background-size: cover;
     background-position: center bottom;
+}
+
+.destination13{
+    grid-column: 2/span 2;
+    grid-row: 10/span 1;
+    z-index: 1;
+    font-size:30px;
+    color:white;
+    letter-spacing: 1px;
+    transform: scaleY(1.5) translateY(20px);
+    // margin: 0;
+    // padding: 0;
+    opacity: 0;
+}
+.white_outline13{
+    -webkit-text-stroke: 1px #fff;
 }
