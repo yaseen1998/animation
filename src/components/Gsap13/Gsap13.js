@@ -113,7 +113,7 @@ const Gsap13 = () => {
                 </div>
                 <div className="right13">
                     <ul>
-                        <li><FaFacebookF/></li>
+                       <Link to='Gsap14'> <li><FaFacebookF/></li></Link>
                         <li><FaTwitter/></li>
                         <li><FaInstagram/></li>
                     </ul>
