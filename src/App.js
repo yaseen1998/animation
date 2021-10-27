@@ -18,6 +18,7 @@ import Gsap11 from './components/Gsap11/Gsap11'
 import Gsap12 from './components/Gsap12/Gsap12' 
 import Gsap13 from './components/Gsap13/Gsap13' 
 import Gsap14 from './components/Gsap14/Gsap14' 
+import Gsap15 from './components/Gsap15/Gsap15' 
 export class App extends Component {
   render() {
     return (
@@ -53,6 +54,9 @@ export class App extends Component {
           </Route>
           <Route path="/Gsap14">
             <Gsap14/>
+          </Route>
+          <Route path="/Gsap15">
+            <Gsap15/>
           </Route>
         </Switch>
       </div>
