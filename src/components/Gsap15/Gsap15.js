@@ -73,22 +73,64 @@ const Gsap15 = () => {
 //     easing:'easeInOutExpo',
 
 // },200)
+const animeprogress15 = document.getElementById('animeprogress15')
+const animebegan15 = document.getElementById('animebegan15')
+const animecomplete15 = document.getElementById('animecomplete15')
+const loopbegan15 = document.getElementById('loopbegan15')
+const loopcomplete15 = document.getElementById('loopcomplete15')
+
+let lBegan=0;
+let lComplete=0;
 const animation=anime({
     targets:'.react3',
     translateX:500,
+    translateY:function(){
+        return anime.random(100,500)
+    },
     duration:6000,
-    easing:'linear'
+    easing:'linear',
+    loop:true,
+    update:function(anime){
+        animeprogress15.innerHTML=Math.round(anime.progress)+'%';
+    },
+    begin:function(anime){
+        animebegan15.innerHTML=anime.began
+    },
+    complete:function(anime){
+        animecomplete15.innerHTML=anime.completed
+    },
+    loopBegin:function(anime){
+        lBegan++;
+        loopbegan15.innerHTML=lBegan
+    },
+    loopComplete:function(anime){
+        lComplete++;
+        loopcomplete15.innerHTML=lComplete
+    },
+    direction:'alternate',
+    autoplay:false
 })
+// animation.finished.then(function(){
+//     alert('animation finished')
+// })
 document.getElementById('pause15').onclick=animation.pause
 document.getElementById('play15').onclick=animation.play
 document.getElementById('restart15').onclick=animation.restart
-document.getElementById('reverse15').onclick=animation.reverse
+document.getElementById('reverse15').onclick=animation.reverse 
+// document.getElementById('stopanime15').onclick=animation.remove('#react32') 
+
 const progress15 = document.getElementById('progress15')
 
 progress15.oninput=function(){
 console.log(progress15.value);
 
 animation.seek(animation.duration * (progress15.value / 100));}
+const react31 = document.getElementById('react31')
+console.log(anime.get(react31,'width','px'));
+anime.set("#react31",{
+    opacity:0.1
+})
+
     })
     return (
         <section className='Gsap15'>
@@ -100,6 +142,12 @@ animation.seek(animation.duration * (progress15.value / 100));}
             <div><button id="restart15">restart</button></div>
             <div><button id="reverse15">reverse</button></div>
             <input type='range' id='progress15' step='0.001' min='0' max='100' />
+            <p id="animeprogress15"></p>
+            <p>anime has began: <span id= 'animebegan15'></span></p>
+            <p>anime has complete: <span id= 'animecomplete15'></span></p>
+            <p>loop has began: <span id= 'loopbegan15'></span></p>
+            <p>loop has complete: <span id= 'loopcomplete15'></span></p>
+            <div><button id="stopanime15">stop square</button></div>
             {/* <input type="text"  onChange={e => setfName(e.target.value)}/> */}
             {/* <div className="react1"> </div>
             <div className="react1"> </div>
