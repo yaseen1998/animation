@@ -131,6 +131,17 @@ anime.set("#react31",{
     opacity:0.1
 })
 
+// svg 
+let path = anime.path('#demo-svg15 path')
+anime({
+    targets:'#emoji15',
+    translateX:path('x'),
+    translateY:path('y'),
+    easing:'linear',
+    duration:5000,
+    loop:true
+})
+
     })
     return (
         <section className='Gsap15'>
@@ -232,6 +243,13 @@ anime.set("#react31",{
                 <div className="react2"></div>
                 <div className="react2"></div>
             </div> */}
+            <div className="demo-wrapper15">
+            <div id="emoji15">😎</div>
+            <svg id="demo-svg15" width='1000' height='500'>
+                <path stroke ='red' fill='none' 
+                d ="M 106 316 L 195 94 L 310 310 L 354 70 L 416 181 L 539 47 L 591 266 L 755 55 L 808 413 Z"/>
+            </svg>
+            </div>
         </section>
     )
 }
