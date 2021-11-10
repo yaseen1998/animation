@@ -82,7 +82,7 @@ const Gsap15 = () => {
     let lComplete = 0;
     const animation = anime({
       targets: ".react3",
-      translateX: 550,
+      translateX: 500,
       translateY: function () {
         return anime.random(100, 500);
       },
